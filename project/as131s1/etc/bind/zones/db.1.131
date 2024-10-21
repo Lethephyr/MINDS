@@ -1,0 +1,54 @@
+$TTL	86400
+@	IN	SOA	ns.isp131.lab. admin.isp131.lab. (
+		   20231001		; Serial
+			   3600		; Refresh
+			   1800		; Retry
+			 604800		; Expire
+			  86400 )	; Negative Cache TTL
+;
+
+@		                  IN	  NS	  ns.isp131.lab.
+11.1.in-addr.arpa.		  IN	  NS	  ns.isp11.lab.
+12.1.in-addr.arpa.		  IN	  NS	  ns.isp12.lab.
+
+; 1.131.0.0/24
+$ORIGIN 0.131.1.in-addr.arpa.
+5    IN  PTR r1e0.isp131.lab.
+9    IN  PTR r1e1.isp131.lab.
+13   IN  PTR r1e2.isp131.lab.
+17   IN  PTR r1e3.isp131.lab.
+1    IN  PTR r1dm.isp131.lab.
+10   IN  PTR r2e1.isp131.lab.
+25   IN  PTR r2e2.isp131.lab.
+2    IN  PTR r2dm.isp131.lab.
+14   IN  PTR r3e1.isp131.lab.
+21   IN  PTR r3e2.isp131.lab.
+26   IN  PTR r3e3.isp131.lab.
+3    IN  PTR r3dm.isp131.lab.
+18   IN  PTR r4e1.isp131.lab.
+22   IN  PTR r4e2.isp131.lab.
+4    IN  PTR r4dm.isp131.lab.
+
+; 1.131.1.0/24
+$ORIGIN 1.131.1.in-addr.arpa.
+1    IN  PTR r3e0.isp131.lab.
+2    IN  PTR ns.isp131.lab.
+3    IN  PTR www.isp131.lab.
+4    IN  PTR dhpcd.isp131.lab.
+
+; 1.131.2.0/24
+$ORIGIN 2.131.1.in-addr.arpa.
+1    IN  PTR r4e0.isp131.lab.
+10    IN  PTR n2-p10.isp131.lab.
+11    IN  PTR n2-p11.isp131.lab.
+12    IN  PTR n2-p12.isp131.lab.
+13    IN  PTR n2-p13.isp131.lab.
+14    IN  PTR n2-p14.isp131.lab.
+15    IN  PTR n2-p15.isp131.lab.
+16    IN  PTR n2-p16.isp131.lab.
+17    IN  PTR n2-p17.isp131.lab.
+18    IN  PTR n2-p18.isp131.lab.
+19    IN  PTR n2-p19.isp131.lab.
+20    IN  PTR n2-p20.isp131.lab.
+
+131.1.in-addr.arpa.		  IN	  NS	  ns.isp131.lab.
